@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Declutter",
+  "version": "1.0",
+  "description": "Hide recommended videos, comments, and other distractions on YouTube.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "css": ["hide.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab"]
+}
